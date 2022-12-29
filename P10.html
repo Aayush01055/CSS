@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script language="javascript" type="text/javascript">
+            function session()
+            {
+                document.cookie="Username=Aayush";
+            }
+
+            function perssistant()
+            {
+                document.cookie="Username=Aayush expires=Thu, 31 dec 2022 12.00.00 UTC";
+            }
+
+            function show()
+            {
+                window.alert(document.cookie);
+            }
+        </script>
+        <form name="frmsession">
+            <input type="button" value="create persistant Cookie" onclick="perssistant()">
+            <input type="button" value="create session Cookie" onclick="session()">
+            <input type="button" value="show Cookie" onclick="show()">
+        </form>
+    </body>
+</html>

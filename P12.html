@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <script language="javascript" type="text/javascript">
+
+            function checkdata()
+            {
+                name=document.forms.frmreg.txtname.value;
+                age=document.forms.frmreg.txtage.value;
+
+                expname=/[a-zA-z]/;
+                expage=/[0-9]/;
+
+                if(expname.test(name))
+                {
+                    alert("Valid name");
+                }
+                else
+                {
+                    alert("Invaid name");
+                }
+
+                if(expage.test(age))
+                {
+                    alert("valid age");
+                }
+                else
+                {
+                    alert("Invalid age");
+                }
+            }
+
+        </script>
+
+        <form name="frmreg">
+            Name: <input type="text" name="txtname"><br>
+            Age: <input type="text" name="txtage"><br>
+            <input type="button" name="btndata" value="submit" onclick="checkdata()">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <script language="javascript" type="text/javascript">
+
+            function sub()
+            {
+                    name=document.forms.frmreg.txtname.value;
+                    age=document.forms.frmreg.txtage.value; 
+                    alert("Name= "+name+" Age="+age);   
+            }
+
+            function rno()
+            {
+                document.forms.frmreg.txtname.readOnly=true;
+                document.forms.frmreg.txtage.readOnly=true;
+            }
+
+            function wrt()
+            {
+                document.forms.frmreg.txtname.readOnly=false;
+                document.forms.frmreg.txtage.readOnly=false;
+            }
+
+        </script>
+        <form name="frmreg">
+            Name: <input type="text" name="txtname" ><br>
+            
+            <br>
+            
+            Age: <input type="text" name="txtage"><br>
+
+            <br>
+
+            <input type="button" name="btnsub" value="Submit" onclick="sub()">
+            <input type="reset" name="btnres" value="Reset"><br>
+            
+            <br>
+
+            <input type="button" name="btnro" value="Read only" onclick="rno()">
+            <input type="button" name="btwrt" value="Write" onclick="wrt()">
+                                                        
+        </form>
+    </body>
+</html>

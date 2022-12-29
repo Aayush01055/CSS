@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <script language="javascript" type="text/javascript">
+            function mclick()
+            {
+                console.log("Click event occured");                
+            }
+
+            function mdown()
+            {
+                console.log("Mouse down event occured");
+            }
+
+            function mup()
+            {
+                console.log("mouse up event occured");
+            }
+
+            function mover()
+            {
+                console.log("mouse over event occured");
+            }
+
+            function mout()
+            {
+                console.log("mouse out event occured");
+            }
+
+            function change()
+            {
+                document.forms.frmreg.txtname.style.backgroundColor="Yellow";
+            }
+        </script>
+        <form name="frmreg">        
+            Name <input type="text" name="txtname" onfocus="change()"><br>
+            <br>
+            <input type="button" name="btnevents" value="Events" onclick="mclick()" onmousedown="mdown()" onmouseup="mup()" onmouseover="mover()" onmouseout="mout()">
+        </form>
+    </body>
+</html>

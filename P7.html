@@ -1,0 +1,26 @@
+<!--1. onchange
+    2. onclick
+    3. onload-->
+
+<html>
+    <body>
+        <script language="javascript" type="text/javascript">
+            function change(color)
+            {
+                document.body.style.backgroundColor=color;
+            }
+
+            function btncl()
+            {
+                alert("Click event occured");
+            }
+        </script>
+        <form name="frm1">
+            <input type="button" name="btnclick" value="Click" onclick="btncl()"><br>
+            <br>
+            <input type="radio" name="rdbcolor" id="rdbred" onchange="change('red')">Red <br>
+            <input type="radio" name="rdbcolor" id="rdbgreen" onchange="change('green')">Green <br>
+            <input type="radio" name="rdbcolor" id="rdblue" onchange="change('blue')">Blue <br>
+        </form>
+    </body>
+</html>
